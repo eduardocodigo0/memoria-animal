@@ -4,6 +4,9 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+import java.awt.event.WindowListener;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -50,7 +53,25 @@ public class Jogo extends JFrame {
     public Jogo() {
         
         tela = this;
-         tempo = AnimalMemory.dificuldade;
+        
+        //Evento ao fechar
+        
+        tela.addWindowListener(new WindowAdapter() {
+            
+            @Override
+            public void windowClosing(WindowEvent e){
+                
+                cronometro.stop();
+                MenuPrincipal.jogoIsActive = false;
+                
+            }
+        
+        });
+        
+        //Fim evento ao fechar
+        
+        
+        tempo = AnimalMemory.dificuldade;
         
         this.setLayout(null);
         this.setTitle("Jogo da memoria");
@@ -183,6 +204,7 @@ Thread cronometro = new Thread(new Runnable(){
                 }
                      
                 JOptionPane.showMessageDialog(null, "Você perdeu! :(");
+                
                 tela.dispose();
                     
             }catch (InterruptedException ex) {
@@ -238,7 +260,7 @@ private void compara(){
     worker.execute();
 
     }     
-        
+
         
 }
         

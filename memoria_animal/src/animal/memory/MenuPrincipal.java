@@ -1,16 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package animal.memory;
 
 import java.awt.Color;
 
-/**
- *
- * @author cod23
- */
+
 public class MenuPrincipal extends javax.swing.JFrame {
 
     /**
@@ -51,7 +44,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("SansSerif", 3, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagem/footprints-cat-48.png"))); // NOI18N
-        jLabel1.setText("  Animal Memory ");
+        jLabel1.setText("   Memória Animal ");
         jLabel1.setToolTipText("");
         jLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.LEADING);
         jLabel1.setOpaque(true);
@@ -230,6 +223,9 @@ public class MenuPrincipal extends javax.swing.JFrame {
     Color salem = new Color(30, 130, 76);
     
     public static boolean criadoresIsActive = false;
+    public static boolean jogoIsActive = false;
+    public static boolean dificuldadesIsActive = false;
+    
     
     private void jButton1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseEntered
         jButton1.setBackground(niagara);
@@ -288,19 +284,25 @@ public class MenuPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
-  
+        if(!jogoIsActive){
             Jogo jogo = new Jogo();
             jogo.setResizable(false);
             jogo.setVisible(true);
-    
+            
+            jogoIsActive = true;
+        }
     }//GEN-LAST:event_jButton1MouseClicked
 
     private void jButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseClicked
-        Opcoes dificuldade = new Opcoes();
-        dificuldade.setLocationRelativeTo(null);
-        dificuldade.setResizable(false);
-        dificuldade.setAlwaysOnTop(true);
-        dificuldade.setVisible(true);
+        if(!dificuldadesIsActive){
+            Opcoes dificuldade = new Opcoes();
+            dificuldade.setLocationRelativeTo(null);
+            dificuldade.setResizable(false);
+            dificuldade.setAlwaysOnTop(true);
+            dificuldade.setVisible(true);
+            
+            dificuldadesIsActive = true;
+        }
     }//GEN-LAST:event_jButton3MouseClicked
     
 
