@@ -2,4 +2,8 @@
 
 Jogo da memória usando figuras de animais.
 
-#### Ainda em construção!
+##### Correções
+
+* Bug cronometro
+* Abrir multiplas telas de jogo
+* Abrir multiplas telas de dificuldade
