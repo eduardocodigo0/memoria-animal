@@ -132,6 +132,9 @@ public class MenuPrincipal extends javax.swing.JFrame {
         jButton4.setIconTextGap(40);
         jButton4.setName("btRank"); // NOI18N
         jButton4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton4MouseClicked(evt);
+            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 jButton4MouseExited(evt);
             }
@@ -225,6 +228,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
     public static boolean criadoresIsActive = false;
     public static boolean jogoIsActive = false;
     public static boolean dificuldadesIsActive = false;
+    public static boolean recordeIsActive = false;
     
     
     private void jButton1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseEntered
@@ -304,6 +308,19 @@ public class MenuPrincipal extends javax.swing.JFrame {
             dificuldadesIsActive = true;
         }
     }//GEN-LAST:event_jButton3MouseClicked
+
+    private void jButton4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton4MouseClicked
+        if(!recordeIsActive){
+            Recordes rank = new Recordes();
+            rank.setLocationRelativeTo(null);
+            rank.setResizable(false);
+            rank.setAlwaysOnTop(true);
+            rank.setVisible(true);
+            
+            recordeIsActive = true;
+        
+        }
+    }//GEN-LAST:event_jButton4MouseClicked
     
 
     
