@@ -2,6 +2,11 @@
 
 package animal.memory;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.SwingUtilities;
 
 public class AnimalMemory {
@@ -10,7 +15,16 @@ public class AnimalMemory {
     
     public static void main(String[] args) {
  
-        
+         //Arquivo rank criador
+         try{
+            File rank = new File("src/Recordes/rank.txt");
+            if(!(rank.exists())){
+                 rank.createNewFile();
+            }
+            
+         }catch(IOException e){}
+               
+            
         SwingUtilities.invokeLater(new Runnable(){
         
             public void run(){
@@ -20,6 +34,9 @@ public class AnimalMemory {
                 menu.setVisible(true);
        
                 MusicPlayer player = new MusicPlayer();
+               
+                
+                
                 ///Animal Memory/src/Som
                 player.setMusica("/src/Som/acousticbreeze.wav");
                 player.playMusicLoop();

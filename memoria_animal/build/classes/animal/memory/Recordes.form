@@ -100,9 +100,9 @@
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace min="0" pref="71" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="jLabel4" alignment="1" pref="510" max="32767" attributes="0"/>
-                          <Component id="jLabel3" alignment="1" max="32767" attributes="0"/>
-                          <Component id="jLabel2" alignment="1" max="32767" attributes="0"/>
+                          <Component id="lbl_terceiro" alignment="1" pref="510" max="32767" attributes="0"/>
+                          <Component id="lbl_segundo" alignment="1" max="32767" attributes="0"/>
+                          <Component id="lbl_primeiro" alignment="1" max="32767" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -111,18 +111,18 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
-                      <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                      <Component id="lbl_primeiro" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
-                      <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lbl_segundo" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
-                      <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                      <Component id="lbl_terceiro" min="-2" max="-2" attributes="0"/>
                       <EmptySpace pref="49" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="jLabel2">
+            <Component class="javax.swing.JLabel" name="lbl_primeiro">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="4c" green="82" red="1e" type="rgb"/>
@@ -137,13 +137,14 @@
                   <Image iconType="3" name="/Imagem/primeiro.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value=" . . .          "/>
+                <Property name="name" type="java.lang.String" value="lbl_primeiro" noResource="true"/>
                 <Property name="opaque" type="boolean" value="true"/>
               </Properties>
               <AccessibilityProperties>
                 <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="lbl_primeiro"/>
               </AccessibilityProperties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel3">
+            <Component class="javax.swing.JLabel" name="lbl_segundo">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="4c" green="82" red="1e" type="rgb"/>
@@ -164,7 +165,7 @@
                 <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="lbl_segundo"/>
               </AccessibilityProperties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel4">
+            <Component class="javax.swing.JLabel" name="lbl_terceiro">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="4c" green="82" red="1e" type="rgb"/>

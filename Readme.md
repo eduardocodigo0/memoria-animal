@@ -10,5 +10,5 @@ Jogo da memória usando figuras de animais.
 
 ##### Novidades
 
-* Tela de recordes (Ainda não funcional)
+* Tela de recordes (Ainda em teste)
 

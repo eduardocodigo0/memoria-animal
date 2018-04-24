@@ -7,6 +7,13 @@ import java.awt.event.MouseEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -26,6 +33,7 @@ import javax.swing.plaf.FontUIResource;
 public class Jogo extends JFrame {
     
     public static long tempo;
+    private long tempo_conta;
     
     int points = 0;
     public static Card carta1 = new Card(0);
@@ -72,6 +80,7 @@ public class Jogo extends JFrame {
         
         
         tempo = AnimalMemory.dificuldade;
+        tempo_conta = tempo;
         
         this.setLayout(null);
         this.setTitle("Jogo da memoria");
@@ -249,7 +258,12 @@ private void compara(){
                if(points >= 14){
                    
                    cronometro.stop();
+                   
+                   int sec = (int)(tempo_conta - tempo);
+                   
                    JOptionPane.showMessageDialog(null, "Você Ganhou!");
+                   pontuacao(sec);
+                   
                    tela.dispose();
                }
                
@@ -259,7 +273,73 @@ private void compara(){
     };
     worker.execute();
 
-    }     
+    }
+
+// Varifica pontuação do jogador
+
+    private void pontuacao(int sec){
+        
+        String[] dados_rank = {"","",""};
+        try {
+            //Abre arquivo para leitura
+            FileReader arquivo = new FileReader("src/Recordes/rank.txt");
+            BufferedReader leitor = new BufferedReader(arquivo);
+            
+            //Itera arquivo e coloca dados no vetor
+            try {
+                String linha = null;
+                
+                int i = 0;
+                while((linha = leitor.readLine()) != null){
+                    dados_rank[i] = linha;
+                    i++;
+                }
+                
+                arquivo.close();
+                leitor.close();
+            } catch (IOException ex) {}
+        }catch (FileNotFoundException ex) {}
+        
+        //Coloca dados de cada jogador em um vetor
+        
+        String primeiro = dados_rank[0];
+        String segundo = dados_rank[1];
+        String terceiro = dados_rank[2];
+        
+        String[] p_dados = primeiro.split(" ");
+        String[] s_dados = segundo.split(" ");
+        String[] t_dados = terceiro.split(" ");
+        
+        
+        if(sec < Integer.valueOf(p_dados[2])){
+            terceiro = segundo;
+            segundo = primeiro;
+            primeiro = "1 "+JOptionPane.showInputDialog("Coloque seu nome")+" "+String.valueOf(sec);
+        }else if(sec < Integer.valueOf(s_dados[2])){
+            terceiro = segundo;
+            segundo = "2 "+JOptionPane.showInputDialog("Coloque seu nome")+" "+ String.valueOf(sec);
+        }else if(sec < Integer.valueOf(t_dados[2])){
+            terceiro = "3 "+JOptionPane.showInputDialog("Coloque seu nome")+" "+ String.valueOf(sec);
+        }
+        
+        //Escrevendo mudanças no arquivo Rank.txt
+        
+        
+        try {
+            File rank = new File("src/Recordes/rank.txt");
+            BufferedWriter escritor = new BufferedWriter(new FileWriter(rank));
+            escritor.write(primeiro);
+            escritor.newLine();
+            escritor.write(segundo);
+            escritor.newLine();
+            escritor.write(terceiro);
+            escritor.flush();
+            escritor.close();
+  
+        } catch (IOException ex) {
+        }
+        
+    }
 
         
 }
