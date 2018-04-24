@@ -7,6 +7,7 @@ Jogo da memória usando figuras de animais.
 * Bug cronometro
 * Abrir multiplas telas de jogo
 * Abrir multiplas telas de dificuldade
+* Jogo travado após uma partida completa
 
 ##### Novidades
 

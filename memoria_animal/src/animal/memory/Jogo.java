@@ -69,8 +69,9 @@ public class Jogo extends JFrame {
             @Override
             public void windowClosing(WindowEvent e){
                 
-                cronometro.stop();
                 MenuPrincipal.jogoIsActive = false;
+                cronometro.stop();
+                
                 
             }
         
@@ -213,7 +214,7 @@ Thread cronometro = new Thread(new Runnable(){
                 }
                      
                 JOptionPane.showMessageDialog(null, "Você perdeu! :(");
-                
+                MenuPrincipal.jogoIsActive = false;
                 tela.dispose();
                     
             }catch (InterruptedException ex) {
@@ -264,6 +265,7 @@ private void compara(){
                    JOptionPane.showMessageDialog(null, "Você Ganhou!");
                    pontuacao(sec);
                    
+                   MenuPrincipal.jogoIsActive = false;
                    tela.dispose();
                }
                
