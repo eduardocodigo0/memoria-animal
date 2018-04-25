@@ -104,7 +104,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
         jButton3.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagem/gear-2-32.png"))); // NOI18N
-        jButton3.setText("Dificuldades          ");
+        jButton3.setText("Opções                   ");
         jButton3.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         jButton3.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         jButton3.setIconTextGap(40);

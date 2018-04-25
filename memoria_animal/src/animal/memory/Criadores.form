@@ -132,7 +132,7 @@
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value=" Eduardo Cavalcanti Batista da Silva"/>
+                <Property name="text" type="java.lang.String" value="  Eduardo Cavalcanti Batista da Silva"/>
                 <Property name="opaque" type="boolean" value="true"/>
               </Properties>
             </Component>
@@ -147,7 +147,7 @@
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value=" Gustavo Alexandre"/>
+                <Property name="text" type="java.lang.String" value="  Gustavo Alexandre Moimaz Costa"/>
                 <Property name="opaque" type="boolean" value="true"/>
               </Properties>
             </Component>
@@ -162,7 +162,7 @@
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value=" Jos&#xe9; Adolfo"/>
+                <Property name="text" type="java.lang.String" value="  Jos&#xe9; Roberto Adolfo J&#xfa;nior"/>
                 <Property name="opaque" type="boolean" value="true"/>
               </Properties>
             </Component>
@@ -177,7 +177,7 @@
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value=" Pedro"/>
+                <Property name="text" type="java.lang.String" value="  Pedro Henrique Correia Mota da Silva"/>
                 <Property name="opaque" type="boolean" value="true"/>
               </Properties>
             </Component>

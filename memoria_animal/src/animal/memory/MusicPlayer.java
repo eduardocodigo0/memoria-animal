@@ -19,6 +19,8 @@ public class MusicPlayer {
     private File music;
     private DataLine.Info info;
     
+    public static Clip music_clip;
+    
     
     
     public void setMusica(String musica){
@@ -54,20 +56,26 @@ public class MusicPlayer {
             AudioInputStream stream = AudioSystem.getAudioInputStream(music);
             AudioFormat format = stream.getFormat();
             info = new DataLine.Info(Clip.class, format);
-            Clip clip;
-            clip = (Clip) AudioSystem.getLine(info);
-            clip.open(stream);
-            clip.loop(Clip.LOOP_CONTINUOUSLY);
+            
+            music_clip = (Clip) AudioSystem.getLine(info);
+            music_clip.open(stream);
+            music_clip.loop(Clip.LOOP_CONTINUOUSLY);
              
                 
         
         }catch(Exception e){
             JOptionPane.showMessageDialog(null, "Erro na reprodução de audio");
-        }
+        }    
+}
     
+    //Metodo para controlar o volume do som
+    public void setVolume(double volume){
+        FloatControl controlador = (FloatControl) music_clip.getControl(FloatControl.Type.MASTER_GAIN);
+        
+        float range_volume = (float)(Math.log(volume)/Math.log(10.0)*20.0);
+        
+        controlador.setValue(range_volume);
+        
+    }
     
-    
-    
-    
-    
-}}
+}

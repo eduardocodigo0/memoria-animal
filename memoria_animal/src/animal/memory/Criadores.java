@@ -57,25 +57,25 @@ public class Criadores extends javax.swing.JFrame {
         jLabel2.setBackground(new java.awt.Color(30, 130, 76));
         jLabel2.setFont(new java.awt.Font("SansSerif", 0, 24)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText(" Eduardo Cavalcanti Batista da Silva");
+        jLabel2.setText("  Eduardo Cavalcanti Batista da Silva");
         jLabel2.setOpaque(true);
 
         jLabel5.setBackground(new java.awt.Color(30, 130, 76));
         jLabel5.setFont(new java.awt.Font("SansSerif", 0, 24)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText(" Gustavo Alexandre");
+        jLabel5.setText("  Gustavo Alexandre Moimaz Costa");
         jLabel5.setOpaque(true);
 
         jLabel4.setBackground(new java.awt.Color(30, 130, 76));
         jLabel4.setFont(new java.awt.Font("SansSerif", 0, 24)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText(" José Adolfo");
+        jLabel4.setText("  José Roberto Adolfo Júnior");
         jLabel4.setOpaque(true);
 
         jLabel6.setBackground(new java.awt.Color(30, 130, 76));
         jLabel6.setFont(new java.awt.Font("SansSerif", 0, 24)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setText(" Pedro");
+        jLabel6.setText("  Pedro Henrique Correia Mota da Silva");
         jLabel6.setOpaque(true);
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);

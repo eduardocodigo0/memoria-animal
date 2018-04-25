@@ -9,6 +9,7 @@ import javax.swing.SwingUtilities;
 public class AnimalMemory {
     
     public static long dificuldade = 120;
+    public static MusicPlayer default_player;
     
     public static void main(String[] args) {
  
@@ -36,7 +37,11 @@ public class AnimalMemory {
                 
                 ///Animal Memory/src/Som
                 player.setMusica("/src/Som/acousticbreeze.wav");
+                
                 player.playMusicLoop();
+                default_player = player;
+                
+                
             }
     });
        

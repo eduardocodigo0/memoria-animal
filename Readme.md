@@ -11,5 +11,5 @@ Jogo da memória usando figuras de animais.
 
 ##### Novidades
 
-* Tela de recordes (Ainda em teste)
-
+* Tela de recordes
+* Controle do volume da musica de fundo.
