@@ -13,3 +13,4 @@ Jogo da memória usando figuras de animais.
 
 * Tela de recordes
 * Controle do volume da musica de fundo.
+* Nova aparência para tela opções
