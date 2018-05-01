@@ -92,6 +92,9 @@ public class MenuPrincipal extends javax.swing.JFrame {
         jButton2.setIconTextGap(40);
         jButton2.setName("btMultplayer"); // NOI18N
         jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton2MouseClicked(evt);
+            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 jButton2MouseExited(evt);
             }
@@ -227,6 +230,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
     
     public static boolean criadoresIsActive = false;
     public static boolean jogoIsActive = false;
+    public static boolean jogoMultIsActive = false;
     public static boolean dificuldadesIsActive = false;
     public static boolean recordeIsActive = false;
     
@@ -321,6 +325,16 @@ public class MenuPrincipal extends javax.swing.JFrame {
         
         }
     }//GEN-LAST:event_jButton4MouseClicked
+
+    private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
+        if(!jogoMultIsActive){
+            JogoMult jogoM = new JogoMult();
+            jogoM.setResizable(false);
+            jogoM.setVisible(true);
+            
+            jogoMultIsActive = true;
+        }
+    }//GEN-LAST:event_jButton2MouseClicked
     
 
     
