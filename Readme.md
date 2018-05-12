@@ -15,3 +15,4 @@ Jogo da memória usando figuras de animais.
 * Controle do volume da musica de fundo.
 * Nova aparência para tela opções
 * Jogar com um amigo
+* Nova capa das cartas
