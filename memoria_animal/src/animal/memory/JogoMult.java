@@ -205,7 +205,7 @@ private void compara(){
            protected Void doInBackground() throws Exception {
                System.out.println("Carta1: "+carta1.getCode()+"\nCarta2: "+carta2.getCode());
                
-               Thread.sleep(1500);
+               Thread.sleep(1000);
                
                if((carta1.getCode()) == (carta2.getCode()) && (!carta1.equals(carta2))){
                    

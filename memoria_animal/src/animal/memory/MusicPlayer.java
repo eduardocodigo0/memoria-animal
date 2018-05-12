@@ -18,7 +18,7 @@ public class MusicPlayer {
     //Colocando alguns atributos para evitar criação de multiplos objetos
     private File music;
     private DataLine.Info info;
-    
+    private AudioClip clip;       //novo
     public static Clip music_clip;
     
     
@@ -34,6 +34,10 @@ public class MusicPlayer {
    
     public void playMusic(String sound){
         try{
+            
+            clip = Applet.newAudioClip(MusicPlayer.class.getResource("/Som/"+sound));
+            clip.play();
+            /*
             music = new File(System.getProperty("user.dir") +"/src/Som/"+sound);
             AudioInputStream stream = AudioSystem.getAudioInputStream(music);
             AudioFormat format = stream.getFormat();
@@ -42,7 +46,7 @@ public class MusicPlayer {
             clip = (Clip) AudioSystem.getLine(info);
             clip.open(stream);
             clip.start();
-             
+             */
         
         }catch(Exception e){
             

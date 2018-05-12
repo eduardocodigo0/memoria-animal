@@ -8,6 +8,7 @@ Jogo da memória usando figuras de animais.
 * Abrir multiplas telas de jogo
 * Abrir multiplas telas de dificuldade
 * Jogo travado após uma partida completa
+* Bug som de virar carta
 
 ##### Novidades
 
