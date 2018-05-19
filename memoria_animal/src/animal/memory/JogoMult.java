@@ -269,7 +269,10 @@ private void compara(){
         if(p1 > p2){
             UIManager.put("OptionPane.messageForeground", Color.BLUE);
             JOptionPane.showMessageDialog(null, "1º Jogador GANHOU!");
-        }else{
+        }else if(p1 == p2){
+            JOptionPane.showMessageDialog(null, " Empate! ");
+        }
+        else{
             UIManager.put("OptionPane.messageForeground", Color.RED);
             JOptionPane.showMessageDialog(null, "2º Jogador GANHOU!");
         }

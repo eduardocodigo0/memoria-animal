@@ -200,7 +200,7 @@
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
                     <Property name="rows" type="int" value="5"/>
-                    <Property name="text" type="java.lang.String" value="          &#xa;        F&#xe1;cil - Tempo 120 segundos.&#xa;        M&#xe9;dia - Tempo 60 segundos.&#xa;        Dificil - Tempo 30 segundos."/>
+                    <Property name="text" type="java.lang.String" value="          &#xa;        F&#xe1;cil - Tempo 180 segundos.&#xa;        M&#xe9;dia - Tempo 120 segundos.&#xa;        Dif&#xed;cil - Tempo 60 segundos."/>
                     <Property name="toolTipText" type="java.lang.String" value=""/>
                     <Property name="enabled" type="boolean" value="false"/>
                   </Properties>

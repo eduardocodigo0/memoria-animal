@@ -9,6 +9,7 @@ Jogo da memória usando figuras de animais.
 * Abrir multiplas telas de dificuldade
 * Jogo travado após uma partida completa
 * Bug som de virar carta
+* Erro no empate
 
 ##### Novidades
 
@@ -17,3 +18,4 @@ Jogo da memória usando figuras de animais.
 * Nova aparência para tela opções
 * Jogar com um amigo
 * Nova capa das cartas
+* Aumento no tempo

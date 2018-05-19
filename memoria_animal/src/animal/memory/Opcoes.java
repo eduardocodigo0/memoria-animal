@@ -75,7 +75,7 @@ public class Opcoes extends javax.swing.JFrame {
         jTextArea1.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jTextArea1.setForeground(new java.awt.Color(255, 255, 255));
         jTextArea1.setRows(5);
-        jTextArea1.setText("          \n        Fácil - Tempo 120 segundos.\n        Média - Tempo 60 segundos.\n        Dificil - Tempo 30 segundos.");
+        jTextArea1.setText("          \n        Fácil - Tempo 180 segundos.\n        Média - Tempo 120 segundos.\n        Difícil - Tempo 60 segundos.");
         jTextArea1.setToolTipText("");
         jTextArea1.setEnabled(false);
         jScrollPane1.setViewportView(jTextArea1);
@@ -197,19 +197,19 @@ public class Opcoes extends javax.swing.JFrame {
 
         switch( jComboBox1.getSelectedIndex()){
             case 0:{
-                AnimalMemory.dificuldade = 120;
+                AnimalMemory.dificuldade = 180;
                 break;
             }
             case 1:{
-                AnimalMemory.dificuldade = 60;
+                AnimalMemory.dificuldade = 120;
                 break;
             }
             case 2:{
-                AnimalMemory.dificuldade = 30;
+                AnimalMemory.dificuldade = 60;
                 break;
             }
             default:{
-                AnimalMemory.dificuldade = 120;
+                AnimalMemory.dificuldade = 180;
                 break;
                 
             }
