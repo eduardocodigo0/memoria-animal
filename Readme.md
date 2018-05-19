@@ -19,3 +19,6 @@ Jogo da memória usando figuras de animais.
 * Jogar com um amigo
 * Nova capa das cartas
 * Aumento no tempo
+
+###### Download
+
