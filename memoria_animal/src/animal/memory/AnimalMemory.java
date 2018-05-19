@@ -8,7 +8,7 @@ import javax.swing.SwingUtilities;
 
 public class AnimalMemory {
     
-    public static long dificuldade = 120;
+    public static long dificuldade = 180;
     public static MusicPlayer default_player;
     
     public static void main(String[] args) {

@@ -75,7 +75,7 @@ public class Criadores extends javax.swing.JFrame {
         jLabel6.setBackground(new java.awt.Color(30, 130, 76));
         jLabel6.setFont(new java.awt.Font("SansSerif", 0, 24)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setText("  Pedro Henrique Correia Mota da Silva");
+        jLabel6.setText("  Pedro Henrique Correa Mota da Silva");
         jLabel6.setOpaque(true);
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
