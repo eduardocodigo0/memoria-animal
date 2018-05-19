@@ -20,5 +20,5 @@ Jogo da memória usando figuras de animais.
 * Nova capa das cartas
 * Aumento no tempo
 
-###### Download
+[Download](https://github.com/eduardocodigo0/memoria-animal/raw/master/Mem%C3%B3ria%20Animal.zip)
 
